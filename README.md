@@ -1,22 +1,26 @@
 # project-web
-Web application for Radiadores Alejo, designed to manage inventory, sales, and maintenance services. The system supports product registration, tracking of spare parts (radiators, compressors, valves, hoses, condensers), and monitoring of repair and air conditioning maintenance services.
+Web application for Radiadores Alejo, designed to manage sales, and maintenance services. The system supports product registration, tracking of sells (radiators, compressors, valves, hoses, condensers), and monitoring of repair and air conditioning maintenance services.
+
 ## Elevator pitch
-  Radiadores Alejo enfrenta dificultades en el control de inventarios y servicios de mantenimiento. Este proyecto desarrolla una aplicación web que permitirá gestionar repuestos, ventas y reparaciones de radiadores y aires acondicionados. La solución está orientada a optimizar la administración, reducir pérdidas y mejorar la trazabilidad del negocio.
+  Radiadores Alejo enfrenta dificultades en el control de ventas y servicios de mantenimiento. Este proyecto desarrolla una aplicación web que permitirá gestionar ventas y reparaciones de radiadores y aires acondicionados. La solución está orientada a optimizar la administración, reducir pérdidas y mejorar la trazabilidad del negocio.
+
 ## Usuarios y segmentos
 Administradores internos: personal de la empresa encargado de gestionar inventario, registrar ventas, controlar repuestos y dar seguimiento a los mantenimientos.
-## Casos de uso principales
--Registrar y actualizar inventario (radiadores, compresores, válvulas, mangueras, condensadores).
--Controlar ventas y salidas de repuestos.
--Agendar y registrar mantenimientos/reparaciones.
--Consultar stock en tiempo real.
-## Objetivos 
--Centralizar la gestión de inventario y servicios.
--Reducir errores manuales en registros.
--Dar visibilidad en tiempo real de existencias.
-## No objetivos
--No manejar facturación electrónica.
--No implementar pagos en línea en esta versión.
 
+## Casos de uso principales
+- Registrar y actualizar inventario (radiadores, compresores, válvulas, mangueras, condensadores).
+- Controlar ventas y salidas de repuestos.
+- Agendar y registrar mantenimientos/reparaciones.
+- Consultar stock en tiempo real.
+
+## Objetivos 
+- Centralizar la gestión de inventario y servicios.
+- Reducir errores manuales en registros.
+- Dar visibilidad en tiempo real de existencias.
+
+## No objetivos
+- No manejar facturación electrónica.
+- No implementar pagos en línea en esta versión.
 
 ## Historias de usuario y alcance (MVP)
 A continuación se propone algunas historias de usuario y se estima su importancia.
@@ -71,7 +75,6 @@ Criterios de Aceptación: El sistema debe permitir el envío de mensajes automat
 Escenario 6.1: Envío de notificación de finalización.
 Dado que la reparación de un cliente ha finalizado. Cuando el técnico actualiza el estado de la orden a "finalizada". Entonces el sistema envía un mensaje de texto automático al número del cliente.
 
-
 **HU7:** Como vendedor, quiero procesar pagos directamente desde la aplicación para agilizar la transacción.
 Criterios de Aceptación: La aplicación no procesará pagos, ya que se ha decidido que esta funcionalidad es muy compleja y no es prioritaria en esta fase inicial. La facturación se maneja de forma externa.
 
@@ -79,7 +82,7 @@ Escenario 7.1: Intento de pago desde la aplicación.
 Dado que se ha generado una venta. Cuando busco una opción para procesar el pago con tarjeta de crédito. Entonces la aplicación no muestra ninguna opción de pago y el vendedor debe procesar el pago por métodos externos.
 
 
-##Mapa de versiones:
+## Mapa de versiones:
 
 **MVP (Semana 11):** Historias Must y Should (HU1, HU2, HU3, HU4).
 **Postergado (Semana 16):** Incluye la historia Could (HU5).
@@ -89,24 +92,24 @@ Dado que se ha generado una venta. Cuando busco una opción para procesar el pag
 Para confiar en los resultados del desarrollo de éste proyecto, se valorará las siguientes métricas:
 
 Rendimiento del backend (FastAPI):
--Tiempo de respuesta de la API: El 95% de las solicitudes a los endpoints clave (por ejemplo /items, /ordenes, /ventas y /mantenimientso) deben completarse en menos de 200 ms.
--Tasa de éxito de la API: La tasa de solicitudes exitosas (códigos de estado 200 y 201) debe ser superior al 98%.
+- Tiempo de respuesta de la API: El 95% de las solicitudes a los endpoints clave (por ejemplo /items, /ordenes, /ventas y /mantenimientso) deben completarse en menos de 200 ms.
+- Tasa de éxito de la API: La tasa de solicitudes exitosas (códigos de estado 200 y 201) debe ser superior al 98%.
 
 Rendimiento del frontend (React):
--Tiempo de carga inicial: La página principal debe carga y muestra su contenido principal en menos de 1s segundo.
--Tiempo de carga de la lista de ítems: La lista de ítems y/o ordenes y/o mantenimientos debe renderizarse en la interfaz de usuario en menos de 500 ms después de que la respuesta de la API.
+- Tiempo de carga inicial: La página principal debe carga y muestra su contenido principal en menos de 1s segundo.
+- Tiempo de carga de la lista de ítems: La lista de ítems y/o ordenes y/o mantenimientos debe renderizarse en la interfaz de usuario en menos de 500 ms después de que la respuesta de la API.
 
 Usabilidad:
--Tasa de éxito en cada uso: El 100% de los usuarios deben ser capaces de crear, actualizar y eliminar un ítem sin errores funcionales en un flujo de trabajo típico.
--Errores del usuario: El número de errores al interactuar con los diferentes formularios de creación de ítems y otras opciones, debe ser mínimo y completarse en menos de 300 ms.
+- Tasa de éxito en cada uso: El 100% de los usuarios deben ser capaces de crear, actualizar y eliminar un ítem sin errores funcionales en un flujo de trabajo típico.
+- Errores del usuario: El número de errores al interactuar con los diferentes formularios de creación de ítems y otras opciones, debe ser mínimo y completarse en menos de 300 ms.
 
 ## Variables de entorno y puerto
 Variables de entorno y puertos
 La configuración de variables de entorno es de suma importancia para la gestión de la configuración entre diferentes ambientes (desarrollo, producción).
 
 ## Variables de Entorno:
--Frontend (.env.development): VITE_API_URL=http://127.0.0.1:8000 para que el frontend sepa la URL a la que le debe hacer sus peticiones a la API.
--Backend (.env o configuración del servidor): CORS_ORIGINS=http://localhost:5173,http://127.0.0.1:5173 crea la lista las URLs del frontend que están permitidas para hacer peticiones.
+- Frontend (.env.development): VITE_API_URL=http://127.0.0.1:8000 para que el frontend sepa la URL a la que le debe hacer sus peticiones a la API.
+- Backend (.env o configuración del servidor): CORS_ORIGINS=http://localhost:5173,http://127.0.0.1:5173 crea la lista las URLs del frontend que están permitidas para hacer peticiones.
 
 ## Puertos:
 -Backend (FastAPI): Puerto 8000.
@@ -118,31 +121,30 @@ La configuración de variables de entorno es de suma importancia para la gestió
 El uso de FastAPI en el backend se refleja en proyecto por brindar velocidad y facilidad de uso.
 
 
--FastAPI: Para la creación de endpoints de la API que manejan la lógica de negocio para los clientes, órdenes, mantenimientos, ventas, tecnicos y articulos.
+- FastAPI: Para la creación de endpoints de la API que manejan la lógica de negocio para los clientes, órdenes, mantenimientos, ventas, tecnicos y articulos.
 
--Pydantic: De gran ayuda sobretodo con el tipado, para la validación de datos y la serialización.
+- Pydantic: De gran ayuda sobretodo con el tipado, para la validación de datos y la serialización.
 
--APIRouter: Permite organizar la API en módulos lógicos, como clientes.py y ordenes.py, etc, para un códifo más manejable y escalable.
+- APIRouter: Permite organizar la API en módulos lógicos, como clientes.py y ordenes.py, etc, para un códifo más manejable y escalable.
 
--BaseModel: Usado para definir estructura de los datos que se esperan en las solicitudes (CrearCliente, CrearOrden) y las respuestas (Cliente, Orden), etc, asegurando que los datos sean válidos y consistentes.
+- BaseModel: Usado para definir estructura de los datos que se esperan en las solicitudes (CrearCliente, CrearOrden) y las respuestas (Cliente, Orden), etc, asegurando que los datos sean válidos y consistentes.
 
 **Frontend :**
 Construido en React, una popular biblioteca de JavaScript para crear interfaces de usuario interactivas.
 
+- React: Se usa para crear la interfaz de usuario con componentes reutilizables, como Clientes y Ordenes, que gestionan su propio estado.
 
--React: Se usa para crear la interfaz de usuario con componentes reutilizables, como Clientes y Ordenes, que gestionan su propio estado.
+- Componentes Funcionales (function ...): Permiten crear componentes de manera simple.
 
--Componentes Funcionales (function ...): Permiten crear componentes de manera simple.
+- Hooks (useState, useEffect): Los hooks son cruciales para el manejo del estado y los efectos secundarios en los componentes.
 
--Hooks (useState, useEffect): Los hooks son cruciales para el manejo del estado y los efectos secundarios en los componentes.
+- useState: Para gestionar el estado de los componentes, como los datos del formulario (form), los resultados de la búsqueda (q), y la información de la orden (orden).
 
--useState: Para gestionar el estado de los componentes, como los datos del formulario (form), los resultados de la búsqueda (q), y la información de la orden (orden).
+- useEffect: Se usa para ejecutar efectos secundarios, como cargar datos del servidor al inicio del componente (useEffect(()=>{ load() },[]) en Clientes.jsx), asegurando que la información esté actualizada cuando el componente se renderiza.
 
--useEffect: Se usa para ejecutar efectos secundarios, como cargar datos del servidor al inicio del componente (useEffect(()=>{ load() },[]) en Clientes.jsx), asegurando que la información esté actualizada cuando el componente se renderiza.
+- Vite: El archivo main.jsx sugiere que el proyecto fue creado con Vite, una herramienta de desarrollo que se usa para iniciar proyectos de React de manera rápida, proporcionando un entorno de desarrollo veloz.
 
--Vite: El archivo main.jsx sugiere que el proyecto fue creado con Vite, una herramienta de desarrollo que se usa para iniciar proyectos de React de manera rápida, proporcionando un entorno de desarrollo veloz.
-
--Fetch API: Se usa para interactuar con el backend. La función fetch() en api.js permite realizar solicitudes HTTP (POST, GET, PUT, DELETE) para crear, leer, actualizar y eliminar datos de la API de FastAPI.
+- Fetch API: Se usa para interactuar con el backend. La función fetch() en api.js permite realizar solicitudes HTTP (POST, GET, PUT, DELETE) para crear, leer, actualizar y eliminar datos de la API de FastAPI.
 
 
 ## Estrategia de estados en FrontEnd
@@ -448,3 +450,4 @@ npm install
 npm run dev
 # open http://localhost:5173
 ```
+**NOTAS:** Este rerpositorio no contiene toda la traza de los commits de lo que se lleva del proyecto por inconvenientes con el repositorio original, que es https://github.com/valennVL/project-web.git, fue necesario crear el presente  repositorio a ultima hora. Gracias por entender. Saludos
