@@ -450,4 +450,19 @@ npm install
 npm run dev
 # open http://localhost:5173
 ```
-**NOTAS:** Este rerpositorio no contiene toda la traza de los commits de lo que se lleva del proyecto por inconvenientes con el repositorio original, que es https://github.com/valennVL/project-web.git, fue necesario crear el presente  repositorio a ultima hora. Gracias por entender. Saludos
+## Soportes de la entrega
+**Capturas de pantalla:**
+- https://github.com/sergium-tg/proy-equipo5-entregable1-semana6/blob/d3639bf3f6fc0bcf6d4c408c52cee599cb08c871/Captura%20de%20pantalla%202025-09-05%20231747.png
+- https://github.com/sergium-tg/proy-equipo5-entregable1-semana6/blob/d3639bf3f6fc0bcf6d4c408c52cee599cb08c871/Captura%20de%20pantalla%202025-09-05%20231900.png
+ -https://github.com/sergium-tg/proy-equipo5-entregable1-semana6/blob/d3639bf3f6fc0bcf6d4c408c52cee599cb08c871/Captura%20de%20pantalla%202025-09-05%20231921.png
+- https://github.com/sergium-tg/proy-equipo5-entregable1-semana6/blob/d3639bf3f6fc0bcf6d4c408c52cee599cb08c871/Captura%20de%20pantalla%202025-09-05%20231947.png
+- https://github.com/sergium-tg/proy-equipo5-entregable1-semana6/blob/d3639bf3f6fc0bcf6d4c408c52cee599cb08c871/Captura%20de%20pantalla%202025-09-05%20232152.png
+- https://github.com/sergium-tg/proy-equipo5-entregable1-semana6/blob/d3639bf3f6fc0bcf6d4c408c52cee599cb08c871/Captura%20de%20pantalla%202025-09-05%20232211.png
+- https://github.com/sergium-tg/proy-equipo5-entregable1-semana6/blob/d3639bf3f6fc0bcf6d4c408c52cee599cb08c871/Captura%20de%20pantalla%202025-09-05%20232424.png
+- https://github.com/sergium-tg/proy-equipo5-entregable1-semana6/blob/d3639bf3f6fc0bcf6d4c408c52cee599cb08c871/Captura%20de%20pantalla%202025-09-05%20232442.png
+
+**Grabacion:**
+- https://drive.google.com/file/d/1WE2ix9bNFF_jjvh9BXvBLckoJsrK7kd3/view?usp=sharing
+
+## NOTAS:
+Este rerpositorio no contiene toda la traza de los commits de lo que se lleva del proyecto por inconvenientes con el repositorio original, que es https://github.com/valennVL/project-web.git, fue necesario crear el presente  repositorio a ultima hora. Gracias por entender. Saludos
